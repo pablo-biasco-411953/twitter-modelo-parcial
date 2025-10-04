@@ -23,7 +23,7 @@ public partial class TwitterCloneContext : DbContext
     {
         modelBuilder.Entity<Country>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Countrie__3213E83FA6023946");
+            entity.HasKey(e => e.Id).HasName("PK__Countrie__3213E83FFC408908");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Country1)
@@ -33,7 +33,7 @@ public partial class TwitterCloneContext : DbContext
 
         modelBuilder.Entity<Tweet>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Tweets__3213E83F878FA892");
+            entity.HasKey(e => e.Id).HasName("PK__Tweets__3213E83F255791C2");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Content)
@@ -48,12 +48,12 @@ public partial class TwitterCloneContext : DbContext
             entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.Tweets)
                 .HasForeignKey(d => d.IdUser)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Tweets__id_user__245D67DE");
+                .HasConstraintName("FK__Tweets__id_user__2EDAF651");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Users__3213E83FFDF6061E");
+            entity.HasKey(e => e.Id).HasName("PK__Users__3213E83F26D92017");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IdCountry).HasColumnName("id_country");
@@ -65,7 +65,7 @@ public partial class TwitterCloneContext : DbContext
             entity.HasOne(d => d.IdCountryNavigation).WithMany(p => p.Users)
                 .HasForeignKey(d => d.IdCountry)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Users__isActive__17F790F9");
+                .HasConstraintName("FK__Users__id_countr__2BFE89A6");
         });
 
         OnModelCreatingPartial(modelBuilder);

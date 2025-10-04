@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GrupoWG\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj": {}
+    "C:\\Users\\TomasAmaya\\Desktop\\prograII\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj": {}
   },
   "projects": {
-    "D:\\GrupoWG\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj": {
+    "C:\\Users\\TomasAmaya\\Desktop\\prograII\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GrupoWG\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj",
+        "projectUniqueName": "C:\\Users\\TomasAmaya\\Desktop\\prograII\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj",
         "projectName": "TwitterCloneApi",
-        "projectPath": "D:\\GrupoWG\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj",
-        "packagesPath": "C:\\Users\\pabli\\.nuget\\packages\\",
-        "outputPath": "D:\\GrupoWG\\twitter-modelo-parcial\\TwitterCloneApi\\obj\\",
+        "projectPath": "C:\\Users\\TomasAmaya\\Desktop\\prograII\\twitter-modelo-parcial\\TwitterCloneApi\\TwitterCloneApi.csproj",
+        "packagesPath": "C:\\Users\\TomasAmaya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TomasAmaya\\Desktop\\prograII\\twitter-modelo-parcial\\TwitterCloneApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pabli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TomasAmaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,12 +44,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.9, )"
@@ -84,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
