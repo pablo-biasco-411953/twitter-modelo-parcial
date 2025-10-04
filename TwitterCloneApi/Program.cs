@@ -1,6 +1,10 @@
 
 using Microsoft.EntityFrameworkCore;
 using TwitterCloneApi.Models;
+using TwitterCloneApi.Repositories.Implementation;
+using TwitterCloneApi.Repositories.Interface;
+using TwitterCloneApi.Services.Implementation;
+using TwitterCloneApi.Services.Interface;
 
 namespace TwitterCloneApi
 {
@@ -21,6 +25,9 @@ namespace TwitterCloneApi
             builder.Services.AddDbContext<TwitterCloneContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
             );
+
+            builder.Services.AddScoped<ITweetServices, TweetServices>();
+            builder.Services.AddScoped<ITweetRepository, TweetRepository>();
 
             var app = builder.Build();
 
